@@ -153,6 +153,7 @@
 		97A7B46B1E6CD8BD0021461D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		97A7B46D1E6CD8BD0021461D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97A7B46F1E6CD8BD0021461D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A7B47B1E6CEB3A0021461D /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		B25889A21D1AF40E00A88EAF /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		B25889A51D1AFA1C00A88EAF /* UITableViewExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionsTests.swift; sourceTree = "<group>"; };
 		B2EF68C41D1879E60010C2E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -325,6 +326,7 @@
 		97A7B4551E6CD8BC0021461D /* MyWeightWatch */ = {
 			isa = PBXGroup;
 			children = (
+				97A7B47A1E6CE9290021461D /* Screens */,
 				97A7B4561E6CD8BC0021461D /* Interface.storyboard */,
 				97A7B4591E6CD8BC0021461D /* Assets.xcassets */,
 				97A7B45B1E6CD8BC0021461D /* Info.plist */,
@@ -351,6 +353,14 @@
 				97A7B4661E6CD8BD0021461D /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97A7B47A1E6CE9290021461D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				97A7B47B1E6CEB3A0021461D /* ListViewController.swift */,
+			);
+			name = Screens;
 			sourceTree = "<group>";
 		};
 		B25889A41D1AF5DE00A88EAF /* Extensions */ = {
@@ -678,6 +688,7 @@
 					97A7B4531E6CD8BC0021461D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = WL8G2WFXFF;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					97A7B45F1E6CD8BD0021461D = {
@@ -1065,14 +1076,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = WL8G2WFXFF;
 				IBSC_MODULE = MyWeightWatch_Extension;
 				INFOPLIST_FILE = MyWeightWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgabrielfreitas.myweight.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.1;
@@ -1084,9 +1098,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = WL8G2WFXFF;
 				IBSC_MODULE = MyWeightWatch_Extension;
 				INFOPLIST_FILE = MyWeightWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgabrielfreitas.myweight.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
