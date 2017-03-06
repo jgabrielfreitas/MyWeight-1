@@ -49,6 +49,7 @@ reports/
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 Pods/
+*lock
 
 # Carthage
 #
@@ -66,3 +67,5 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/screenshots
+MyWeight.xcodeproj/project.pbxproj
+.bundle/

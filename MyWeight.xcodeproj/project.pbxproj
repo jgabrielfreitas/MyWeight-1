@@ -17,6 +17,14 @@
 		1DA167761DC982EB00E0049C /* AuthorizationRequestViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA167751DC982EB00E0049C /* AuthorizationRequestViewControllerTests.swift */; };
 		1DB0707E1DCE9DCC00367276 /* SnapshotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0707D1DCE9DCC00367276 /* SnapshotService.swift */; };
 		6C5AF84A6CE22A5C37EFF724 /* Pods_MyWeightUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E77B9C5AEA5FFBEDD0EA8C /* Pods_MyWeightUITests.framework */; };
+		97A7B4581E6CD8BC0021461D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A7B4561E6CD8BC0021461D /* Interface.storyboard */; };
+		97A7B45A1E6CD8BC0021461D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A7B4591E6CD8BC0021461D /* Assets.xcassets */; };
+		97A7B4611E6CD8BD0021461D /* MyWeightWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 97A7B4601E6CD8BD0021461D /* MyWeightWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97A7B4681E6CD8BD0021461D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A7B4671E6CD8BD0021461D /* InterfaceController.swift */; };
+		97A7B46A1E6CD8BD0021461D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A7B4691E6CD8BD0021461D /* ExtensionDelegate.swift */; };
+		97A7B46C1E6CD8BD0021461D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A7B46B1E6CD8BD0021461D /* NotificationController.swift */; };
+		97A7B46E1E6CD8BD0021461D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A7B46D1E6CD8BD0021461D /* Assets.xcassets */; };
+		97A7B4721E6CD8BD0021461D /* MyWeightWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 97A7B4541E6CD8BC0021461D /* MyWeightWatch.app */; };
 		B25889A31D1AF40E00A88EAF /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25889A21D1AF40E00A88EAF /* UITableViewCell+ReuseIdentifier.swift */; };
 		B25889A61D1AFA1C00A88EAF /* UITableViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25889A51D1AFA1C00A88EAF /* UITableViewExtensionsTests.swift */; };
 		B2EF68C11D1879E40010C2E7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2EF68C31D1879E40010C2E7 /* Localizable.strings */; };
@@ -64,6 +72,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		97A7B4621E6CD8BD0021461D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D97F43F81CAB5E50000F4E12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97A7B45F1E6CD8BD0021461D;
+			remoteInfo = "MyWeightWatch Extension";
+		};
+		97A7B4701E6CD8BD0021461D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D97F43F81CAB5E50000F4E12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97A7B4531E6CD8BC0021461D;
+			remoteInfo = MyWeightWatch;
+		};
 		D97F44151CAB5E51000F4E12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D97F43F81CAB5E50000F4E12 /* Project object */;
@@ -81,12 +103,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		97A7B4781E6CD8BD0021461D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				97A7B4611E6CD8BD0021461D /* MyWeightWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D97F445C1CAB637B000F4E12 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				97A7B4721E6CD8BD0021461D /* MyWeightWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +142,17 @@
 		5BB2437EF088770D6625706F /* Pods-MyWeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeight.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWeight/Pods-MyWeight.release.xcconfig"; sourceTree = "<group>"; };
 		5CF4596C8B06811C107E06FA /* Pods-MyWeightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeightUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWeightUITests/Pods-MyWeightUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		714EE1833F9A86400E4C91B2 /* Pods-MyWeightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeightUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWeightUITests/Pods-MyWeightUITests.release.xcconfig"; sourceTree = "<group>"; };
+		97A7B4541E6CD8BC0021461D /* MyWeightWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeightWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A7B4571E6CD8BC0021461D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		97A7B4591E6CD8BC0021461D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97A7B45B1E6CD8BC0021461D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A7B4601E6CD8BD0021461D /* MyWeightWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyWeightWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A7B4661E6CD8BD0021461D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		97A7B4671E6CD8BD0021461D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		97A7B4691E6CD8BD0021461D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		97A7B46B1E6CD8BD0021461D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		97A7B46D1E6CD8BD0021461D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97A7B46F1E6CD8BD0021461D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B25889A21D1AF40E00A88EAF /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		B25889A51D1AFA1C00A88EAF /* UITableViewExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionsTests.swift; sourceTree = "<group>"; };
 		B2EF68C41D1879E60010C2E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -168,6 +213,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		97A7B45D1E6CD8BD0021461D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D97F43FD1CAB5E50000F4E12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +322,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		97A7B4551E6CD8BC0021461D /* MyWeightWatch */ = {
+			isa = PBXGroup;
+			children = (
+				97A7B4561E6CD8BC0021461D /* Interface.storyboard */,
+				97A7B4591E6CD8BC0021461D /* Assets.xcassets */,
+				97A7B45B1E6CD8BC0021461D /* Info.plist */,
+			);
+			path = MyWeightWatch;
+			sourceTree = "<group>";
+		};
+		97A7B4641E6CD8BD0021461D /* MyWeightWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				97A7B4671E6CD8BD0021461D /* InterfaceController.swift */,
+				97A7B4691E6CD8BD0021461D /* ExtensionDelegate.swift */,
+				97A7B46B1E6CD8BD0021461D /* NotificationController.swift */,
+				97A7B46D1E6CD8BD0021461D /* Assets.xcassets */,
+				97A7B46F1E6CD8BD0021461D /* Info.plist */,
+				97A7B4651E6CD8BD0021461D /* Supporting Files */,
+			);
+			path = "MyWeightWatch Extension";
+			sourceTree = "<group>";
+		};
+		97A7B4651E6CD8BD0021461D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97A7B4661E6CD8BD0021461D /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B25889A41D1AF5DE00A88EAF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +415,8 @@
 				D97F44021CAB5E50000F4E12 /* MyWeight */,
 				D97F44171CAB5E51000F4E12 /* MyWeightTests */,
 				D97F44221CAB5E51000F4E12 /* MyWeightUITests */,
+				97A7B4551E6CD8BC0021461D /* MyWeightWatch */,
+				97A7B4641E6CD8BD0021461D /* MyWeightWatch Extension */,
 				D97F44011CAB5E50000F4E12 /* Products */,
 				0B075A481068510189B6DCD5 /* Pods */,
 				7ED41B9BDD6BC2B9908A2D93 /* Frameworks */,
@@ -344,6 +429,8 @@
 				D97F44001CAB5E50000F4E12 /* MyWeight.app */,
 				D97F44141CAB5E51000F4E12 /* MyWeightTests.xctest */,
 				D97F441F1CAB5E51000F4E12 /* MyWeightUITests.xctest */,
+				97A7B4541E6CD8BC0021461D /* MyWeightWatch.app */,
+				97A7B4601E6CD8BD0021461D /* MyWeightWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -480,6 +567,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		97A7B4531E6CD8BC0021461D /* MyWeightWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A7B4791E6CD8BD0021461D /* Build configuration list for PBXNativeTarget "MyWeightWatch" */;
+			buildPhases = (
+				97A7B4521E6CD8BC0021461D /* Resources */,
+				97A7B4781E6CD8BD0021461D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97A7B4631E6CD8BD0021461D /* PBXTargetDependency */,
+			);
+			name = MyWeightWatch;
+			productName = MyWeightWatch;
+			productReference = 97A7B4541E6CD8BC0021461D /* MyWeightWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		97A7B45F1E6CD8BD0021461D /* MyWeightWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A7B4771E6CD8BD0021461D /* Build configuration list for PBXNativeTarget "MyWeightWatch Extension" */;
+			buildPhases = (
+				97A7B45C1E6CD8BD0021461D /* Sources */,
+				97A7B45D1E6CD8BD0021461D /* Frameworks */,
+				97A7B45E1E6CD8BD0021461D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyWeightWatch Extension";
+			productName = "MyWeightWatch Extension";
+			productReference = 97A7B4601E6CD8BD0021461D /* MyWeightWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		D97F43FF1CAB5E50000F4E12 /* MyWeight */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D97F44281CAB5E51000F4E12 /* Build configuration list for PBXNativeTarget "MyWeight" */;
@@ -495,6 +616,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				97A7B4711E6CD8BD0021461D /* PBXTargetDependency */,
 			);
 			name = MyWeight;
 			productName = MyWeight;
@@ -549,15 +671,25 @@
 		D97F43F81CAB5E50000F4E12 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Diogo Tridapalli";
 				TargetAttributes = {
+					97A7B4531E6CD8BC0021461D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WL8G2WFXFF;
+						ProvisioningStyle = Automatic;
+					};
+					97A7B45F1E6CD8BD0021461D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WL8G2WFXFF;
+						ProvisioningStyle = Automatic;
+					};
 					D97F43FF1CAB5E50000F4E12 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = MQRRG9G4R7;
+						DevelopmentTeam = WL8G2WFXFF;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -596,11 +728,30 @@
 				D97F43FF1CAB5E50000F4E12 /* MyWeight */,
 				D97F44131CAB5E51000F4E12 /* MyWeightTests */,
 				D97F441E1CAB5E51000F4E12 /* MyWeightUITests */,
+				97A7B4531E6CD8BC0021461D /* MyWeightWatch */,
+				97A7B45F1E6CD8BD0021461D /* MyWeightWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		97A7B4521E6CD8BC0021461D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A7B45A1E6CD8BC0021461D /* Assets.xcassets in Resources */,
+				97A7B4581E6CD8BC0021461D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A7B45E1E6CD8BD0021461D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A7B46E1E6CD8BD0021461D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D97F43FE1CAB5E50000F4E12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -767,6 +918,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		97A7B45C1E6CD8BD0021461D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A7B46C1E6CD8BD0021461D /* NotificationController.swift in Sources */,
+				97A7B46A1E6CD8BD0021461D /* ExtensionDelegate.swift in Sources */,
+				97A7B4681E6CD8BD0021461D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D97F43FC1CAB5E50000F4E12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -837,6 +998,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		97A7B4631E6CD8BD0021461D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97A7B45F1E6CD8BD0021461D /* MyWeightWatch Extension */;
+			targetProxy = 97A7B4621E6CD8BD0021461D /* PBXContainerItemProxy */;
+		};
+		97A7B4711E6CD8BD0021461D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97A7B4531E6CD8BC0021461D /* MyWeightWatch */;
+			targetProxy = 97A7B4701E6CD8BD0021461D /* PBXContainerItemProxy */;
+		};
 		D97F44161CAB5E51000F4E12 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D97F43FF1CAB5E50000F4E12 /* MyWeight */;
@@ -850,6 +1021,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		97A7B4561E6CD8BC0021461D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97A7B4571E6CD8BC0021461D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		B2EF68C31D1879E40010C2E7 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -881,6 +1060,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		97A7B4731E6CD8BD0021461D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WL8G2WFXFF;
+				IBSC_MODULE = MyWeightWatch_Extension;
+				INFOPLIST_FILE = MyWeightWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgabrielfreitas.myweight.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		97A7B4741E6CD8BD0021461D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WL8G2WFXFF;
+				IBSC_MODULE = MyWeightWatch_Extension;
+				INFOPLIST_FILE = MyWeightWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgabrielfreitas.myweight.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		97A7B4751E6CD8BD0021461D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = WL8G2WFXFF;
+				INFOPLIST_FILE = "MyWeightWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgabrielfreitas.myweight.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		97A7B4761E6CD8BD0021461D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = WL8G2WFXFF;
+				INFOPLIST_FILE = "MyWeightWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgabrielfreitas.myweight.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 		D97F44261CAB5E51000F4E12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1023,12 +1274,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyWeight/Resources/MyWeight.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WL8G2WFXFF;
 				INFOPLIST_FILE = MyWeight/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.diogot.health.My-Weight";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgabrielfreitas.myweight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "48b72cf9-9e79-453f-99c5-c9bfbc10b057";
-				PROVISIONING_PROFILE_SPECIFIER = "My Weight Development";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1038,12 +1292,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyWeight/Resources/MyWeight.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WL8G2WFXFF;
 				INFOPLIST_FILE = MyWeight/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.diogot.health.My-Weight";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgabrielfreitas.myweight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "68471f20-c7ac-4f6a-afdc-2741f0cad759";
-				PROVISIONING_PROFILE_SPECIFIER = "My Weight";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -1102,6 +1359,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		97A7B4771E6CD8BD0021461D /* Build configuration list for PBXNativeTarget "MyWeightWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A7B4751E6CD8BD0021461D /* Debug */,
+				97A7B4761E6CD8BD0021461D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		97A7B4791E6CD8BD0021461D /* Build configuration list for PBXNativeTarget "MyWeightWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A7B4731E6CD8BD0021461D /* Debug */,
+				97A7B4741E6CD8BD0021461D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D97F43FB1CAB5E50000F4E12 /* Build configuration list for PBXProject "MyWeight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
